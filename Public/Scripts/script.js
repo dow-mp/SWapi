@@ -46,6 +46,8 @@ function reloadPage() {
 };
 
 function handleError() {
+    const err ="Error: something went wrong."
+    console.log(err);
     const table = document.querySelector("table");
     table.classList.toggle("hidden");
     const resetDiv = document.querySelector(".error");
