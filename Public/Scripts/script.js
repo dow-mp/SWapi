@@ -41,4 +41,20 @@ async function getStarWarsData() {
     }
 };
 
-getStarWarsData();
+function reloadPage() {
+    window.location.reload();
+};
+
+function handleError() {
+    const table = document.querySelector("table");
+    table.classList.toggle("hidden");
+    const resetDiv = document.querySelector(".error");
+    const resetButton = document.querySelector("#reset");
+    // const resetMsg = document.querySelector("h2");
+    resetDiv.classList.toggle("unhide");
+    // resetButton.classList.toggle("unhide");
+    resetButton.addEventListener("click", reloadPage);
+};
+
+
+getStarWarsData().catch(handleError);

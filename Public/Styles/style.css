@@ -13,7 +13,7 @@ html {
     background-image:repeating-radial-gradient(rgb(137, 137, 139), rgb(212, 209, 209));
 }
 
-section {
+header, section {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -23,6 +23,26 @@ section {
 h1 {
     font-family: 'Warnes', cursive;
     font-size: 1em;
+}
+
+.error {
+    margin: 0 auto;
+    display: none;
+}
+
+#reset {
+    margin:auto;
+    text-transform:uppercase;
+    width: 27vw;
+    padding: 15px 5px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align:center;
+    width: 27vw;
 }
 
 table {
@@ -44,8 +64,17 @@ td {
     border: 1px solid darkgray;
 }
 
+.hidden {
+    display: none;
+}
 
-
+.unhide {
+    display:block;
+    margin: auto;
+    /* flex-direction: column;
+    justify-content:center;
+    align-content:center; */
+}
 
 @media screen and (min-width: 769px) {
     h1 {
