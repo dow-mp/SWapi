@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    width: 100%;
+}
+
+html {
+    background-repeat:repeat-y;
+    background-size: auto;
+    background-image:repeating-radial-gradient(rgb(137, 137, 139), rgb(212, 209, 209));
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Warnes', cursive;
+    font-size: 1em;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+thead {
+    font-size: 0.5em;
+    font-weight: 700;
+    font-family: 'Press Start 2P', cursive;
+}
+
+thead>tr>td {
+    padding: 5px;
+}
+
+td {
+    border: 1px solid darkgray;
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    thead {
+        font-size: 1rem;
+    }
+
+    thead>tr>td {
+        padding: 15px;
+    }
+}
